@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/abstract_class_test/abstract_class_test.iml" filepath="$PROJECT_DIR$/abstract_class_test/abstract_class_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array_operations/array_operations.iml" filepath="$PROJECT_DIR$/array_operations/array_operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic_calculator/basic_calculator.iml" filepath="$PROJECT_DIR$/basic_calculator/basic_calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic_programs.iml" filepath="$PROJECT_DIR$/basic_programs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/equal_object_test/equal_object_test.iml" filepath="$PROJECT_DIR$/equal_object_test/equal_object_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exception_handling_programs/exception_handling_programs.iml" filepath="$PROJECT_DIR$/exception_handling_programs/exception_handling_programs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file_handling_test/file_handling_test.iml" filepath="$PROJECT_DIR$/file_handling_test/file_handling_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nested_classes_test/nested_classes_test.iml" filepath="$PROJECT_DIR$/nested_classes_test/nested_classes_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/overriding_test/overriding_test.iml" filepath="$PROJECT_DIR$/overriding_test/overriding_test.iml" />
+    </modules>
+  </component>
+</project>

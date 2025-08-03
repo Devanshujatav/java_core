@@ -1,0 +1,45 @@
+package in.devanshu.Employee;
+
+public class Employee {
+
+    private String employeeName;
+    private int employeeAge;
+    private double employeeSalary;
+
+    public Employee(String employeeName , int employeeAge , double employeeSalary){
+        this.employeeName = employeeName;
+        this.employeeAge = employeeAge;
+        this.employeeSalary = employeeSalary;
+    }
+
+    public String EmployeeDetails(){
+        return "Employee Details : Name :" + this.employeeName +"Age : "+this.employeeAge+"Salary : " +this.employeeSalary+".";
+    }
+
+    // Getter and Setter for employee name
+    public String getEmployeeName(){
+        return this.employeeName;
+    }
+
+    public void setEmployeeNameName(String employeeName){
+        this.employeeName = employeeName;
+    }
+
+    // Getter and Setter for employee age
+    public int getEmployeeAge(){
+        return this.employeeAge;
+    }
+
+    public void setEmployeeAge(int employeeAge){
+        this.employeeAge = employeeAge;
+    }
+
+    // Getter and Setter for employee salary
+    public double getEmployeeSalary(){
+        return this.employeeSalary;
+    }
+
+    public void setEmployeeSalary(double salary){
+        this.employeeSalary = salary;
+    }
+}
