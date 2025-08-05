@@ -13,6 +13,9 @@
       <module fileurl="file://$PROJECT_DIR$/exception_handling_programs/exception_handling_programs.iml" filepath="$PROJECT_DIR$/exception_handling_programs/exception_handling_programs.iml" />
       <module fileurl="file://$PROJECT_DIR$/executor_service/executor_service.iml" filepath="$PROJECT_DIR$/executor_service/executor_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/file_handling_test/file_handling_test.iml" filepath="$PROJECT_DIR$/file_handling_test/file_handling_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/functional_interface/functional_interface.iml" filepath="$PROJECT_DIR$/functional_interface/functional_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/functional_programming/functional_programming.iml" filepath="$PROJECT_DIR$/functional_programming/functional_programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intermediate_and_terminal_operations/intermediate_and_terminal_operations.iml" filepath="$PROJECT_DIR$/intermediate_and_terminal_operations/intermediate_and_terminal_operations.iml" />
       <module fileurl="file://$PROJECT_DIR$/map/map.iml" filepath="$PROJECT_DIR$/map/map.iml" />
       <module fileurl="file://$PROJECT_DIR$/multithreading/multithreading.iml" filepath="$PROJECT_DIR$/multithreading/multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/nested_classes_test/nested_classes_test.iml" filepath="$PROJECT_DIR$/nested_classes_test/nested_classes_test.iml" />
