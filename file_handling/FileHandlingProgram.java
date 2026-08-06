@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 
@@ -20,6 +21,26 @@ public class FileHandlingProgram {
         }
     }
 
+    public static void writeToFile(File file , String data){
+        FileWriter writer = null;
+
+        try{
+            writer = new FileWriter(file);
+            writer.write(data);
+            displayWriteSuccessMessage();
+        }catch (IOException e){
+            displayErrorMessage(e);
+        }finally {
+            try{
+                if (writer != null) {
+                    writer.close();
+                }
+            }catch(IOException e){
+                displayErrorMessage(e);
+            }
+        }
+    }
+
     // File created message
     public static void displaySuccessMessage(){
         System.out.println("File Created Successfully.");
@@ -35,9 +56,15 @@ public class FileHandlingProgram {
         System.out.println("Error : " + e.getMessage());
     }
 
+    // Data written message
+    public static void displayWriteSuccessMessage(){
+        System.out.println("Data Written Successfully");
+    }
+
     public static void main(String[] args) {
         File file = getFile("notes.txt");
         createFile(file);
-    }
 
+        writeToFile(file, "Hello, this is file handling in java.");
+    }
 }
