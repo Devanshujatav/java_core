@@ -59,4 +59,18 @@ public class FileClassProgram {
             System.out.println("Delete Successfully." + file.getPath());
         }
     }
+
+    // Rename / Move File
+    public static void renameFile(File source , File destination){
+        if (!source.exists()) {
+            System.out.println("Source file/directory does not exists.");
+            return;
+        }
+
+        if (source.renameTo(destination)) {
+            System.out.println("Renamed / Moved Successfully.");
+        }else{
+            System.out.println("Rename/Move operation failed.");
+        }
+    }
 }
