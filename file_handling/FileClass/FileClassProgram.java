@@ -73,4 +73,169 @@ public class FileClassProgram {
             System.out.println("Rename/Move operation failed.");
         }
     }
+
+    // Check for the directory
+    public static void checkIsDirectory(File file){
+        if (file.isDirectory()) {
+            System.out.println(file.getPath() + " is a Directory.");
+        }else{
+            System.out.println(file.getPath() + " is NOT a Directory.");
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 9. canRead()
+    // Checks whether file can be read
+    // ---------------------------------------------------------
+    public static void checkCanRead(File file){
+        if (file.canRead()) {
+            System.out.println("Read Permission : YES");
+        }else{
+            System.out.println("Read Permission : NO");
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 10. canWrite()
+    // Checks whether file can be written
+    // ---------------------------------------------------------
+    public static void checkCanWrite(File file){
+        if (file.canWrite()) {
+            System.out.println("Write Permission : YES");
+        }else{
+            System.out.println("Write Permission : NO");
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 11. canExecute()
+    // Checks whether file can be executed
+    // ---------------------------------------------------------
+    public static void checkCanExecute(File file){
+        if (file.canExecute()) {
+            System.out.println("Execute Permission : YES");
+        }else{
+            System.out.println("Execute Permission : NO");
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 12. getName()
+    // Returns only the file/directory name
+    // ---------------------------------------------------------
+    public static void displayName(File file){
+        System.out.println("File/Directory Name : " + file.getName());
+    }
+
+    // ---------------------------------------------------------
+    // 13. getPath()
+    // Returns path as given while creating File object
+    // ---------------------------------------------------------
+    public static void displayPath(File file){
+        System.out.println("Path : " + file.getPath());
+    }
+
+    // ---------------------------------------------------------
+    // 14. getAbsolutePath()
+    // Returns complete absolute path
+    // ---------------------------------------------------------
+    public static void displayAbsolutePath(File file){
+        System.out.println("Absolute Path : " + file.getAbsolutePath());
+    }
+
+    // ---------------------------------------------------------
+    // 15. getCanonicalPath()
+    // Returns cleaned-up absolute path
+    // Removes things like . and ..
+    // ---------------------------------------------------------
+    public static void displayCanonicalPath(File file){
+        try {
+            System.out.println("Canonical Path : " + file.getCanonicalPath());
+        } catch (IOException e) {
+            System.out.println("Error getting Canonical Path : " + e.getMessage());
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 16. length()
+    // Returns size of file in bytes
+    // ---------------------------------------------------------
+    public static void displayLength(File file){
+        System.out.println("File Size : " + file.length() + " bytes.");
+    }
+
+    // ---------------------------------------------------------
+    // 17. lastModified()
+    // Returns last modified time
+    // ---------------------------------------------------------
+    public static void displayLastModified(File file){
+        long time = file.lastModified();
+
+        if (time == 0) {
+            System.out.println("Could not determine last modified time.");
+            return;
+        }
+
+        Date date = new Date(time);
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+        System.out.println("Last Modified : " + formatter.format(date));
+    }
+
+    // ---------------------------------------------------------
+    // 18. list()
+    // Returns names of files/directories inside directory
+    // ---------------------------------------------------------
+    public static void listNames(File directory){
+        if (!directory.isDirectory()) {
+            System.out.println("Given Path is not a Directory.");
+            return;
+        }
+
+        String[] names = directory.list();
+
+        if (names == null) {
+            System.out.println("Unable to read the directory.");
+            return;
+        }
+
+        if (names.length == 0) {
+            System.out.println("Directory is Empty.");
+        }
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+    }
+
+    // ---------------------------------------------------------
+    // 19. listFiles()
+    // Returns File[] objects inside directory
+    // ---------------------------------------------------------
+    public static void listFileObjects(File directory){
+        if (!directory.isDirectory()) {
+            System.out.println("Given Path is not a Directory.");
+            return;
+        }
+
+        File[] files = directory.listFiles();
+
+        if (files == null) {
+            System.out.println("Unable to read directory.");
+            return;
+        }
+
+        if (files.length == 0) {
+            System.out.println("Directory is Empty.");
+        }
+
+        for(File file : files){
+            if (file.isFile()) {
+                System.out.println("FILE        : " + file.getPath());
+            }else if (file.isDirectory()) {
+                System.out.println("DIRECTORY         : " + file.getPath());
+            }
+        }
+    }
 }
